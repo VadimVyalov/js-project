@@ -1,0 +1,49 @@
+$main-white-color: #ffffff; //* просто білий колір */
+$black-color: #000000; //* просто чорний колір */
+
+$time-hover: 250ms; //* Час эфектів ховера */
+
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$animation-duration: 250ms;
+
+:root {
+  --cards-gap: 32px; //* Відступ у картках  */
+  --cards-count: 3; //* Карток в лінії  */
+
+  --accent-color: #4440f6; //* Все що фіолетове  */
+  --footer-background-color: #a8a8a8; //*колір футера*/
+  --secondary-text-color: #a8a8a8;
+  --button-text-color: #f4f4f4;
+}
+
+@mixin includeLight {
+  --main-background-color: #f4f4f4;
+  --main-text-color: #111321; //* Текст */
+  --toogle-background-color: #fff;
+  --toogle-border-color: #4440f6;
+}
+
+@mixin includeDark {
+  --main-background-color: #2e2e2e;
+  --main-text-color: #f4f4f4; //* Текст */
+  --toogle-background-color: #4440f6;
+  --toogle-border-color: #fff;
+}
+
+@media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
+  html {
+    @include includeLight;
+  }
+  html.dark {
+    @include includeDark;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    @include includeDark;
+  }
+  html.light {
+    @include includeLight;
+  }
+}
