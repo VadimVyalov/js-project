@@ -1,21 +1,21 @@
 {
-  "name": "goit-js-hw-11",
+  "name": "js-project",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/VadimVyalov/goit-js-hw-11",
+  "homepage": "https://github.com/VadimVyalov.io/js-project",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-11/"
+    "build": "parcel build src/*.html --public-url /js-project/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VadimVyalov/goit-js-hw-11.git"
+    "url": "git+https://github.com/VadimVyalov/.git"
   },
   "keywords": [],
   "author": "Vadim Vyalov <vyalov.vadim@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/VadimVyalov/goit-js-hw-11/issues"
+    "url": "https://github.com/VadimVyalov/js-project/issues"
   },
   "dependencies": {
     "axios": "^1.2.2",
